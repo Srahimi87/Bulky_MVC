@@ -14,16 +14,12 @@
     </div>
     </div>
 
-<table class=" table table-bordered table-striped">
+<table class=" table table-bordered table-striped" style="width: 70%; margin: 40px;">
     <thead>
     <tr> 
-        <th>
-            Category Name
-        </th>
-        <th>
-            Display Order
-        </th>
-        <th></th>
+        <th style="padding: 8px;">Category Name</th>
+            <th style="padding: 8px;">Display Order</th>
+            <th style="padding: 8px;"></th>
     </tr>
     </thead>
     <tbody>
@@ -34,10 +30,10 @@
         <td> @obj.DisplayOrder</td>
         <td>
             <div class="w-75 btn-group" role="group">
-                <a asp-controller="Category" asp-action="Edit" class="btn btn-dark mx-2">
+                <a asp-controller="Category" asp-action="Edit" asp-route-id="@obj.Id" class="btn btn-dark mx-2">
                     <i class="bi bi-pencil-square"></i> Edit
                 </a>
-                 <a asp-controller="Category" asp-action="Delete" class="btn btn-danger mx-2">
+                     <a asp-controller="Category" asp-action="Delete" asp-route-id="@obj.Id" class="btn btn-danger mx-2">
                     <i class="bi bi-trash-fill"></i> Delete
                 </a>
             </div>
