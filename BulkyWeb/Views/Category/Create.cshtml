@@ -1,14 +1,14 @@
 ﻿@model Category
 
 <form method="post">
-    <div class="border p-3 mt-4" style="width: 70%; margin: 40px;">
-        <div class="row pb-2">
-            <h2 class="text-dark">Create Category</h2>
+    <div class="border p-3 mt-4"  style="width: 70%; margin: 40px;">
+        <div class="col-12 text-center bg-success" >
+            <h2 class="text-dark, p=2">Create Category</h2>
             <hr/>
         </div>
         <div asp-validation-summary="All"></div>
         <div class="mb-3 row p-1" style="width: 70%; margin: 40px;">
-            <label class="p=0">Category Name</label>
+            <label class="p=2">Category Name</label>
             <input asp-for="Name" class="form-control"/>
             <span asp-validation-for="Name" class="text-danger"></span>
         </div>
